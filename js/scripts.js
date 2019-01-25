@@ -7,11 +7,6 @@ function range(start, end){
     return list;
   }
 }
-function BeepBoop(string) {
-  if (number === 1)
-  replace(1, "Beep");
-}
-
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
@@ -19,7 +14,13 @@ $(document).ready(function() {
     var end = parseInt($("#endNumber").val());
     var startFinish = range(start, end);
     var numToString = startFinish.toString();
-    var result = BeepBoop(numToString);
+    var result = numToString;
+    if (result.indexOf("1") >=0) {
+      replace("1", "beep");
+    }
+    else {
+      
+    }
     console.log(result);
   });
   // return result;
