@@ -1,4 +1,3 @@
-
 function range(start, end){
   if (end - start === 1) {
     return [start + 0];
@@ -12,9 +11,10 @@ console.log(range(49,59));
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    var input = parseInt($("#enterNumber").val());
-    var result = range(input);
-    console.log(result, 23);
+    var start = parseInt($("#startNumber").val());
+    var end = parseInt($("#endNumber").val());
+    var result = range(start, end);
+    console.log(result);
   });
   // return result;
 });
