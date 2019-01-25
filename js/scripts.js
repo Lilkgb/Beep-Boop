@@ -8,7 +8,7 @@ function range(start, end){
   }
 }
 function ifResult(numToString) {
-  if(numToString.includes("1"))
+  if(numToString.indexOf("1") === 0 || numToString.indexOf("1") ===1)
   console.log("ok this works");
   return numToString;
 }
@@ -20,6 +20,7 @@ $(document).ready(function() {
     var startFinish = range(start, end);
     var numToString = startFinish.toString();
     var result = ifResult(numToString);
+    $(".range").text(result);
     console.log(result);
   });
   // return result;
