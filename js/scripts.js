@@ -1,5 +1,5 @@
 function range(start, end){
-  if (end - start === 1) {
+  if (end - start === 0) {
     return [start + 0];
   }else {
     var list = range(start, end -1);
