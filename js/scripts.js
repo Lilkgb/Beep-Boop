@@ -7,14 +7,18 @@ function range(start, end){
     return list;
   }
 }
-console.log(range(49,59));
+function numberToText(string) {
+
+}
+
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
     var start = parseInt($("#startNumber").val());
     var end = parseInt($("#endNumber").val());
-    var result = range(start, end);
-    console.log(result);
+    var startFinish = range(start, end);
+    var numToString = startFinish.toString();
+    console.log(numToString);
   });
   // return result;
 });
