@@ -7,6 +7,11 @@ function range(start, end){
     return list;
   }
 }
+function ifResult(numToString) {
+  if(numToString.includes("1"))
+  console.log("ok this works");
+  return numToString;
+}
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
@@ -14,13 +19,7 @@ $(document).ready(function() {
     var end = parseInt($("#endNumber").val());
     var startFinish = range(start, end);
     var numToString = startFinish.toString();
-    var result = numToString;
-    if (result.indexOf("1") >=0) {
-      replace("1", "beep");
-    }
-    else {
-      
-    }
+    var result = ifResult(numToString);
     console.log(result);
   });
   // return result;
