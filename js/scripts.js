@@ -7,8 +7,9 @@ function range(start, end){
     return list;
   }
 }
-function numberToText(string) {
-
+function BeepBoop(string) {
+  if (number === 1)
+  replace(1, "Beep");
 }
 
 $(document).ready(function() {
@@ -18,7 +19,8 @@ $(document).ready(function() {
     var end = parseInt($("#endNumber").val());
     var startFinish = range(start, end);
     var numToString = startFinish.toString();
-    console.log(numToString);
+    var result = BeepBoop(numToString);
+    console.log(result);
   });
   // return result;
 });
