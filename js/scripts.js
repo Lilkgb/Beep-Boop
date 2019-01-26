@@ -8,9 +8,14 @@ function range(start, end){
   }
 }
 function ifResult(numToString) {
-  if(numToString.indexOf("1") === 0 || numToString.indexOf("1") ===1)
-  console.log("ok this works");
-  return numToString;
+  var res = numToString.includes('1');
+  if(res === true) {
+    console.log("THIS WORKS!");
+    return numToString;
+  }
+  else {
+    return numToString;
+  }
 }
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
@@ -21,7 +26,7 @@ $(document).ready(function() {
     var numToString = startFinish.toString();
     var result = ifResult(numToString);
     $(".range").text(result);
-    console.log(result);
+    // console.log(result);
   });
   // return result;
 });
