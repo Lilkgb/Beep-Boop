@@ -8,9 +8,19 @@ function range(start, end){
   }
 }
 function ifResult(numToString) {
-  var res = numToString.includes('1');
-  if(res === true) {
-    console.log("THIS WORKS!");
+  var n1 = numToString.includes('1');
+  var n2 = numToString.includes('2');
+  var n3 = numToString.includes('3');
+  if(n1 === true) {
+    console.log("I see a 1");
+    return numToString;
+  }
+  else if (n2 === true) {
+    console.log('I see a 2');
+    return numToString;
+  }
+  else if (n3 === true) {
+    console.log("I see a 3");
     return numToString;
   }
   else {
