@@ -1,8 +1,19 @@
 function range(end) {
 var result = '';
   for (var i=0; i <= end; i++) {
-    result = result.concat(i + " ");
+    if (i.toString().includes("3")) {
+      result = result.concat("I'm Sorry Bro ");
     }
+    else if(i.toString().includes("2")) {
+      result = result.concat("boop ");
+    }
+    else if(i.toString().includes('1')) {
+      result = result.concat("beep ");
+    }
+    else {
+      result = result.concat(i + " ");
+    }
+  }
     return(result);
 }
 // function ifResult(numToString) {
