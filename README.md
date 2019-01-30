@@ -47,7 +47,7 @@ _Want to contribute or work on what I have so far:_
 
 ## Known Bugs
 
-_If you open index.html file in google chrome and select the three little dots on the top right and open the console. When the user submits their numbers. If it's a double digit number the function ifResult is not being tracked correctly. If the user types in 30 for example. the console log will print that it see's one even though "1" is no where present in the inputs._
+_There is no known bugs at the moment_
 
 ## Support and contact details
 
