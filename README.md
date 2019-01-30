@@ -9,17 +9,33 @@
 _This is a webpage where the user can input two numbers, one starting point and one ending point and click show result. When the results show base on what number they have. The rules are if the number contains a 1: all digits will be replaced with "beep". If it contains a 2: all digits are replaced with "boop". If it contains a number 3 all digits are replaced with "I'm sorry I'm afraid I can't do that"_
 
 ## Specs
+_If user inputs any value. It will display starting at 0 to that number_
+* _input:"5"_
+* _output:"0, 1, 2, 3, 4, 5"
+
 _If user inputs a 1_
 * _input:"1"_
 * _output:"Beep"_
 
 _If user inputs a 2_
 * _input:"2"_
-* _output:"boop"_
+* _output:"Boop"_
 
 _If user inputs a 3_
 * _input:"3"_
-* _output:"I'm sorry I'm afraid I can't do that"_
+* _output:"I'm sorry, I'm afraid I can't do that"_
+
+_If "13" is input by the user then "3" out applies, not "1"_
+* _input:"13"_
+* _output:"I'm sorry, I'm afraid I can't do that"
+
+_If "21" is input by the user then "2" output applies, not "1"_
+* _input:"21"_
+* _output:"Boop"
+
+_If "32" is input by the user then "3" output applies, not "2"_
+* _input:"32"_
+* _output:"I'm sorry, I'm afraid I can't do that"
 
 ## Setup/Installation Requirements
 

@@ -2,13 +2,13 @@ function range(end) {
 var result = '';
   for (var i=0; i <= end; i++) {
     if (i.toString().includes("3")) {
-      result = result.concat("I'm Sorry Bro, ");
+      result = result.concat("I'm sorry, I'm afraid I can't do that, ");
     }
     else if(i.toString().includes("2")) {
       result = result.concat("boop, ");
     }
     else if(i.toString().includes('1')) {
-      result = result.concat("beep, ");
+      result = result.concat("beep ");
     }
     else {
       result = result.concat(i + " ");
@@ -43,6 +43,7 @@ $(document).ready(function() {
     var rangeNumbers = range(end);
     // var numToString = rangeNumbers.toString();
     $(".range").text(rangeNumbers);
+    $("#result").show();
     // console.log(result);
   });
   // return result;
